@@ -170,7 +170,7 @@
               "{{#each members}}": {
                 "type": "horizontal",
                 "style": {
-                  "background": "#ffffff"
+                  "background": "#f8d728"
                 },
                 "components": [{
                   "type": "image",
