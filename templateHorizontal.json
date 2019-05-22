@@ -179,7 +179,8 @@
                     "width": "180",
                     "height": "180",
                     "padding": "10",
-                    "corner_radius": "90"
+                    "corner_radius": "90",
+                     "align": "center"
                   }
                 }, {
                   "type": "label",
@@ -188,7 +189,8 @@
                     "font": "ChalkboardSE-Bold",
                     "size": "25",
                     "padding": "10",
-                    "color": "#1192f0"
+                    "color": "#1192f0",
+                     "align": "center"
                   }
                 }]
               }
