@@ -145,6 +145,16 @@
             "action": {
               "type": "$render"  
             }
+          },{
+            "type": "label",
+            "text": "Horizontal",
+            "class": "labels left",
+            "action": {
+              "type": "$render",
+              "options": {
+                "template": "horizontal"
+              }
+            }
           }],
           "sections": [{
             "header": {
