@@ -141,13 +141,16 @@
           "layers": [{
             "type": "label",
             "text": "Horizontal",
-            "class": "labels left"
+            "class": "labels left",
+            "action": {
+              "type": "$render"
+            }
           }, {
             "type": "label",
             "text": "Vertical",
             "class": "labels right",
              "href": {
-              "type": "$href"
+              "type": "$href",
               "href": {
                 "url": "https://raw.githubusercontent.com/sachinvarma/JASONETTE-Android/develop/templates.json"
               }
