@@ -143,9 +143,8 @@
             "text": "Horizontal",
             "class": "labels left",
             "action": {
-              "type": "$render",
-              "options": {
-                "template": "horizontal"
+              "href": {
+                "url": "https://raw.githubusercontent.com/sachinvarma/JASONETTE-Android/develop/templates.json"
               }
             }
           }, {
