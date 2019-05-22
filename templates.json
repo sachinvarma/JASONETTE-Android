@@ -12,20 +12,20 @@
       },
       "data": {
         "members": [{
-          "name": "Sunil",
-          "image": "https://qph.fs.quoracdn.net/main-raw-55228855-psqvxswbvkwqrqtbfrolskrgsepjcohq.jpeg"
+          "name": "Bart",
+          "image": "https://jasonette.github.io/Jasonpedia/assets/bart.png"
         }, {
-          "name": "Rohan",
-          "image": "https://pbs.twimg.com/profile_images/548709628771459072/Kviv3NmQ_400x400.jpeg"
+          "name": "Homer",
+          "image": "https://jasonette.github.io/Jasonpedia/assets/homer.jpg"
         }, {
-          "name": "Alok",
-          "image": "https://pbs.twimg.com/profile_images/1033355263682600960/0IBTFZif.jpg"
+          "name": "Marge",
+          "image": "https://jasonette.github.io/Jasonpedia/assets/marge.png"
         }, {
-          "name": "Sachin",
-          "image": "https://avatars1.githubusercontent.com/u/24585778?s=460&v=4"
+          "name": "Lisa",
+          "image": "https://jasonette.github.io/Jasonpedia/assets/lisa.jpg"
         }, {
-          "name": "Ganesh",
-          "image": "https://avatars0.githubusercontent.com/u/20925105?s=400&v=4"
+          "name": "Maggie",
+          "image": "https://jasonette.github.io/Jasonpedia/assets/maggie.png"
         }]
       },
       "styles": {
@@ -69,13 +69,6 @@
           },
           "layers": [{
             "type": "label",
-            "text": "Vertical",
-            "class": "labels right",
-            "action": {
-              "type": "$render"
-            }
-          },{
-            "type": "label",
             "text": "Horizontal",
             "class": "labels left",
             "action": {
@@ -84,12 +77,19 @@
                 "template": "horizontal"
               }
             }
+          }, {
+            "type": "label",
+            "text": "Vertical",
+            "class": "labels right",
+            "action": {
+              "type": "$render"
+            }
           }],
           "sections": [{
             "type": "horizontal",
             "header": {
               "type": "image",
-              "url": "https://ailoitte.com/wp-content/uploads/2018/03/Ailoitte_Logo_White.png",
+              "url": "https://jasonette.github.io/Jasonpedia/assets/simpsons.jpg",
               "style": {
                 "width": "100%",
                 "padding": "0",
@@ -159,7 +159,7 @@
           "sections": [{
             "header": {
               "type": "image",
-              "url": "https://ailoitte.com/wp-content/uploads/2018/03/Ailoitte_Logo_White.png",
+              "url": "https://jasonette.github.io/Jasonpedia/assets/simpsons.jpg",
               "style": {
                 "width": "100%",
                 "padding": "0",
@@ -170,7 +170,7 @@
               "{{#each members}}": {
                 "type": "horizontal",
                 "style": {
-                  "background": "#f8d728"
+                  "background": "#ffffff"
                 },
                 "components": [{
                   "type": "image",
