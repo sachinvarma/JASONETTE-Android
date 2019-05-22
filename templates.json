@@ -11,28 +11,22 @@
         }
       },
       "data": {
-        "members": [
-          {
-            "name": "Sunil",
-            "image": "https://qph.fs.quoracdn.net/main-raw-55228855-psqvxswbvkwqrqtbfrolskrgsepjcohq.jpeg"
-          },
-          {
-            "name": "Rohan",
-            "image": "https://pbs.twimg.com/profile_images/548709628771459072/Kviv3NmQ_400x400.jpeg"
-          },
-          {
-            "name": "Alok",
-            "image": "https://pbs.twimg.com/profile_images/1033355263682600960/0IBTFZif.jpg"
-          },
-          {
-            "name": "Sachin",
-            "image": "https://avatars1.githubusercontent.com/u/24585778?s=460&v=4"
-          },
-          {
-            "name": "Ganesh",
-            "image": "https://avatars0.githubusercontent.com/u/20925105?s=400&v=4"
-          }
-        ]
+        "members": [{
+          "name": "Sunil",
+          "image": "https://qph.fs.quoracdn.net/main-raw-55228855-psqvxswbvkwqrqtbfrolskrgsepjcohq.jpeg"
+        }, {
+          "name": "Rohan",
+          "image": "https://pbs.twimg.com/profile_images/548709628771459072/Kviv3NmQ_400x400.jpeg"
+        }, {
+          "name": "Alok",
+          "image": "https://pbs.twimg.com/profile_images/1033355263682600960/0IBTFZif.jpg"
+        }, {
+          "name": "Sachin",
+          "image": "https://avatars1.githubusercontent.com/u/24585778?s=460&v=4"
+        }, {
+          "name": "Ganesh",
+          "image": "https://avatars0.githubusercontent.com/u/20925105?s=400&v=4"
+        }]
       },
       "styles": {
         "labels": {
@@ -47,6 +41,7 @@
           "height": "100",
           "corner_radius": "50",
           "color": "#ffffff",
+          "background": "rgba(0,0,0,0.7)",
           "background": "#F2E205",
           "padding": "20"
         },
@@ -72,74 +67,66 @@
               "background": "#f8d728"
             }
           },
-          "layers": [
-            {
-              "type": "label",
-              "text": "Vertical",
-              "class": "labels right",
-              "action": {
-                "type": "$render"
+          "layers": [{
+            "type": "label",
+            "text": "Vertical",
+            "class": "labels right",
+            "action": {
+              "type": "$render"
+            }
+          },{
+            "type": "label",
+            "text": "Horizontal",
+            "class": "labels left",
+            "action": {
+              "type": "$render",
+              "options": {
+                "template": "horizontal"
+              }
+            }
+          }],
+          "sections": [{
+            "type": "horizontal",
+            "header": {
+              "type": "image",
+              "url": "https://ailoitte.com/wp-content/uploads/2018/03/Ailoitte_Logo_White.png",
+              "style": {
+                "width": "100%",
+                "padding": "0",
+                "z_index": "-1"
               }
             },
-            {
-              "type": "label",
-              "text": "Horizontal",
-              "class": "labels left",
-              "action": {
-                "type": "$render",
-                "options": {
-                  "template": "horizontal"
-                }
-              }
-            }
-          ],
-          "sections": [
-            {
-              "type": "horizontal",
-              "header": {
-                "type": "image",
-                "url": "https://ailoitte.com/wp-content/uploads/2018/03/Ailoitte_Logo_White.png",
+            "items": {
+              "{{#each members}}": {
+                "type": "vertical",
                 "style": {
-                  "width": "100%",
-                  "padding": "0",
-                  "z_index": "-1"
-                }
-              },
-              "items": {
-                "{{#each members}}": {
-                  "type": "vertical",
+                  "width": "200",
+                  "height": "300",
+                  "padding": "10",
+                  "padding_top": "30",
+                  "align": "center"
+                },
+                "components": [{
+                  "type": "image",
+                  "url": "{{image}}",
                   "style": {
-                    "width": "200",
-                    "height": "300",
+                    "width": "180",
+                    "height": "180",
                     "padding": "10",
-                    "padding_top": "30",
-                    "align": "center"
-                  },
-                  "components": [
-                    {
-                      "type": "image",
-                      "url": "{{image}}",
-                      "style": {
-                        "width": "180",
-                        "height": "180",
-                        "padding": "10",
-                        "corner_radius": "90"
-                      }
-                    },
-                    {
-                      "type": "label",
-                      "text": "{{name}}",
-                      "style": {
-                        "font": "ChalkboardSE-Bold",
-                        "size": "25",
-                        "color": "#1192f0"
-                      }
-                    }
-                  ]
-                }
+                    "corner_radius": "90"
+                  }
+                }, {
+                  "type": "label",
+                  "text": "{{name}}",
+                  "style": {
+                    "font": "ChalkboardSE-Bold",
+                    "size": "25",
+                    "color": "#1192f0"
+                  }
+                }]
               }
             }
-          ]
+          }]
         },
         "body": {
           "style": {
@@ -151,70 +138,62 @@
               "background": "#f8d728"
             }
           },
-          "layers": [
-            {
-              "type": "label",
-              "text": "Horizontal",
-              "class": "labels left",
-              "action": {
-                "type": "$render",
-                "options": {
-                  "template": "horizontal"
-                }
+          "layers": [{
+            "type": "label",
+            "text": "Horizontal",
+            "class": "labels left",
+            "action": {
+              "type": "$render",
+              "options": {
+                "template": "horizontal"
+              }
+            }
+          }, {
+            "type": "label",
+            "text": "Vertical",
+            "class": "labels right",
+            "action": {
+              "type": "$render"
+            }
+          }],
+          "sections": [{
+            "header": {
+              "type": "image",
+              "url": "https://ailoitte.com/wp-content/uploads/2018/03/Ailoitte_Logo_White.png",
+              "style": {
+                "width": "100%",
+                "padding": "0",
+                "z_index": "-1"
               }
             },
-            {
-              "type": "label",
-              "text": "Vertical",
-              "class": "labels right",
-              "action": {
-                "type": "$render"
-              }
-            }
-          ],
-          "sections": [
-            {
-              "header": {
-                "type": "image",
-                "url": "https://ailoitte.com/wp-content/uploads/2018/03/Ailoitte_Logo_White.png",
+            "items": {
+              "{{#each members}}": {
+                "type": "horizontal",
                 "style": {
-                  "width": "100%",
-                  "padding": "0",
-                  "z_index": "-1"
-                }
-              },
-              "items": {
-                "{{#each members}}": {
-                  "type": "horizontal",
+                  "background": "#f8d728"
+                },
+                "components": [{
+                  "type": "image",
+                  "url": "{{image}}",
                   "style": {
-                    "background": "#f8d728"
-                  },
-                  "components": [
-                    {
-                      "type": "image",
-                      "url": "{{image}}",
-                      "style": {
-                        "width": "180",
-                        "height": "180",
-                        "padding": "10",
-                        "corner_radius": "90"
-                      }
-                    },
-                    {
-                      "type": "label",
-                      "text": "{{name}}",
-                      "style": {
-                        "font": "ChalkboardSE-Bold",
-                        "size": "25",
-                        "padding": "10",
-                        "color": "#1192f0"
-                      }
-                    }
-                  ]
-                }
+                    "width": "180",
+                    "height": "180",
+                    "padding": "10",
+                    "corner_radius": "90"
+                  }
+                }, {
+                  "type": "label",
+                  "text": "{{name}}",
+                  "style": {
+                    "font": "ChalkboardSE-Bold",
+                    "size": "25",
+                    "padding": "10",
+                    "color": "#1192f0"
+                  }
+                }]
               }
             }
-          ]
+          }]
         }
       }
     }
