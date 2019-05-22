@@ -156,16 +156,11 @@
             }
           }, {
             "type": "label",
-            "href": {
-                "url": "https://raw.githubusercontent.com/sachinvarma/JASONETTE-Android/develop/templates.json"
-              },
             "text": "Vertical",
             "class": "labels right",
             "action": {
-              "type": "$href",
-                      "href": {
-                "url": "https://raw.githubusercontent.com/sachinvarma/JASONETTE-Android/develop/templates.json"
-              },
+              "type": "$render",
+                      
             }
           }],
           "sections": [{
