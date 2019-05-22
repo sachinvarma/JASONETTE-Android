@@ -142,7 +142,7 @@
             "type": "label",
             "text": "Horizontal",
             "class": "labels left",
-            "action": {
+            "href": {
               "type": "$href",
               "href": {
                 "url": "https://raw.githubusercontent.com/sachinvarma/JASONETTE-Android/develop/templates.json"
