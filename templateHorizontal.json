@@ -141,19 +141,16 @@
           "layers": [{
             "type": "label",
             "text": "Horizontal",
-            "class": "labels left",
-            "href": {
-              "type": "$href",
-              "href": {
-                "url": "https://jasonette.github.io/Jasonpedia/core/render/index.json"
-              }
-            }
+            "class": "labels left"
           }, {
             "type": "label",
             "text": "Vertical",
             "class": "labels right",
-            "action": {
-              "type": "$render"
+             "href": {
+              "type": "$href",
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/core/render/index.json"
+              }
             }
           }],
           "sections": [{
