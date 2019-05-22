@@ -32,7 +32,7 @@
         "labels": {
           "size": "12",
           "font": "HelveticaNeue-Bold",
-          "align": "center"
+          "align": "center_vertical"
         },
         "left": {
           "bottom": "20",
