@@ -147,9 +147,9 @@
             "text": "Vertical",
             "class": "labels right",
              "href": {
-              "type": "$href",
+              "type": "$href"
               "href": {
-                "url": "https://jasonette.github.io/Jasonpedia/core/render/index.json"
+                "url": "https://raw.githubusercontent.com/sachinvarma/JASONETTE-Android/develop/templates.json"
               }
             }
           }],
