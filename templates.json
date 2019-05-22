@@ -145,7 +145,7 @@
             "href": {
               "type": "$href",
               "href": {
-                "url": "https://jasonette.github.io/Jasonpedia/hello.json"
+                "url": "https://raw.githubusercontent.com/sachinvarma/JASONETTE-Android/develop/templateHorizontal.json"
               }
             }
           }, {
