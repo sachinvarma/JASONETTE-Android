@@ -140,13 +140,6 @@
           },
           "layers": [ {
             "type": "label",
-            "text": "Vertical",
-            "class": "labels right",
-            "action": {
-              "type": "$render"  
-            }
-          },{
-            "type": "label",
             "text": "Horizontal",
             "class": "labels left",
             "action": {
@@ -154,6 +147,13 @@
               "options": {
                 "template": "horizontal"
               }
+            }
+          }, {
+            "type": "label",
+            "text": "Vertical",
+            "class": "labels right",
+            "action": {
+              "type": "$render"
             }
           }],
           "sections": [{
