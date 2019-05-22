@@ -138,7 +138,14 @@
               "background": "#f8d728"
             }
           },
-          "layers": [{
+          "layers": [ {
+            "type": "label",
+            "text": "Vertical",
+            "class": "labels right",
+            "action": {
+              "type": "$render"  
+            }
+          },{
             "type": "label",
             "href": {
                 "url": "https://raw.githubusercontent.com/sachinvarma/JASONETTE-Android/develop/templates.json"
@@ -153,14 +160,6 @@
               "options": {
                 "template": "horizontal"
               }
-            }
-          }, {
-            "type": "label",
-            "text": "Vertical",
-            "class": "labels right",
-            "action": {
-              "type": "$render",
-                      
             }
           }],
           "sections": [{
